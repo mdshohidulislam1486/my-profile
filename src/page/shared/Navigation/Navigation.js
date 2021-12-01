@@ -35,7 +35,7 @@ const Navigation = () => {
 
     return (
 
-         <Box sx={{display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+         <Box style={{textAlign:'center'}} sx={{display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
              <Box sx={{display:'flex', alignItems:'center', marginLeft:{xs:'1em', sm:'3em'} }}>
                 <div><h3 className='round-nav'>N</h3></div>
                 <div style={{lineHeight:'2px', marginLeft:'10px'}}>
@@ -59,7 +59,7 @@ const Navigation = () => {
                  <CancelIcon onClick={()=>handleCloseMenu()}  className='close-menu' ></CancelIcon>
                  
                 </nav>
-                <Box sx={{display:'flex', marginTop:3, marginRight:{xs:'1em', sm:'3em'} }}>
+                <Box className="menu-hover" sx={{display:'flex', marginTop:3, marginRight:{xs:'1em', sm:'3em'} }}>
                 <small style={{paddingRight:'10px'}}>MENU</small>
                  <DehazeIcon onClick={handleOpenMenu} className='menu-icon'/>
                 </Box>

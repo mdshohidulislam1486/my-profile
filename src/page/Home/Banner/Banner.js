@@ -20,7 +20,7 @@ const Banner = () => {
                         Website and user interface designer
                         </Typography>
                         <Typography variant="h6" gutterBottom component="div">
-                        Over the past 9 years, as an art director and designer, I’ve worked with big companies and up-and-coming startups to successfully help them reach their full potential and attract new customers.
+                        Over the past 1 years, as an art director and designer, I would like worke with big companies and up-and-coming startups to successfully help them reach their full potential and attract new customers.
                         </Typography>
                     </Grid>
                     <Grid item xs={2} md={4}>
