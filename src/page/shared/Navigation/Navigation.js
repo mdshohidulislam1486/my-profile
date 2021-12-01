@@ -1,10 +1,38 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import './Navigation.css'
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import { Container, Box } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import CancelIcon from '@mui/icons-material/Cancel';
+
+
+
+
+
+
+
+
+
 const Navigation = () => {
+  
+
+    const handleCloseMenu=()=>{
+
+        const myNav = document.getElementById('my-nav')
+        myNav.style.top ='-100vh'
+        console.log('closed')
+    }
+    const handleOpenMenu=()=>{
+        const myNav = document.getElementById('my-nav')
+        myNav.style.top ='0'
+        console.log('closed')
+    }
+   
+    
+    const handleRelode = ()=>{
+        window.location.reload()
+    }
+
     return (
 
          <Box sx={{display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
@@ -16,21 +44,25 @@ const Navigation = () => {
                 </div>
              </Box>
 
-             <Box className='remove-body' sx={{display:'flex', justifyContent:'center', alignItems:'center',  marginRight:{xs:'1em', sm:'3em'}, cursor:"pointer" }}>
-                <small>MENU</small>
-                <nav style={{overflow:'hidden'}} className="my-nav">
-                 <h2 className='home-bg'>Developer</h2>
+              <Box  sx={{display:'flex', justifyContent:"center", alignItems:'center'}}>
+                
+                <nav  id='my-nav' className='my-nav'>
+                 <h2 className='home-bac' >Developer</h2>
                  <ul>
-                     <li><Link to="/home">Home</Link></li>
+                     <li  onClick={handleRelode}><Link  to='/home'>Home</Link></li>
                      <li><Link to="/home">Experience</Link></li>
-                     <li><Link to="/home">Projects</Link></li>
-                     <li><Link to="/home">Contact</Link></li>
+                     <li><a  target='_blank' rel="noreferrer" href="https://drive.google.com/file/d/1xyV3Mec1zRegJTJaZv0GWp-3ML5ncky2/view?usp=sharing" alt='ffh'>Resume</a></li>
+                     <li><Link to="/contact">Contact</Link></li>
                      <li><Link to="/home">About</Link></li>
                  </ul>
-                 <CancelIcon className='close-menu'></CancelIcon>
+                 
+                 <CancelIcon onClick={()=>handleCloseMenu()}  className='close-menu' ></CancelIcon>
                  
                 </nav>
-                 <DehazeIcon className='menu-icon'/>
+                <Box sx={{display:'flex', marginTop:3, marginRight:{xs:'1em', sm:'3em'} }}>
+                <small style={{paddingRight:'10px'}}>MENU</small>
+                 <DehazeIcon onClick={handleOpenMenu} className='menu-icon'/>
+                </Box>
 
              </Box>
          </Box>
