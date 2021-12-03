@@ -1,9 +1,10 @@
 import React from 'react';
+import Navigation from '../../page/shared/Navigation/Navigation'
 
 const ContactPage = () => {
     return (
         <div>
-            <h1>Please contac us to know more</h1>
+            <Navigation></Navigation>
         </div>
     );
 };

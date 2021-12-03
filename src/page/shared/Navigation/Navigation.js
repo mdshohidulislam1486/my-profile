@@ -6,13 +6,6 @@ import { Link, useParams } from 'react-router-dom';
 import CancelIcon from '@mui/icons-material/Cancel';
 
 
-
-
-
-
-
-
-
 const Navigation = () => {
   
 
@@ -20,12 +13,17 @@ const Navigation = () => {
 
         const myNav = document.getElementById('my-nav')
         myNav.style.top ='-100vh'
-        console.log('closed')
+        const myBody = document.getElementsByTagName("BODY")[0];
+        myBody.style.overflow = 'scroll'
     }
+
     const handleOpenMenu=()=>{
         const myNav = document.getElementById('my-nav')
+        const myBody = document.getElementsByTagName("BODY")[0];
+        myBody.style.overflow = 'hidden'
+        myNav.style.zIndex = '2'
+
         myNav.style.top ='0'
-        console.log('closed')
     }
    
     
@@ -34,7 +32,7 @@ const Navigation = () => {
     }
 
     return (
-
+        
          <Box style={{textAlign:'center'}} sx={{display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
              <Box sx={{display:'flex', alignItems:'center', marginLeft:{xs:'1em', sm:'3em'} }}>
                 <div><h3 className='round-nav'>N</h3></div>
