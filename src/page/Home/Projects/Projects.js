@@ -3,7 +3,11 @@ import { Box } from '@mui/system';
 import React from 'react';
 import cctv from '../../../images/projects/cctvDes.png'
 import cctvph1 from '../../../images/projects/cctvmobile2.png'
-import cctvph2 from '../../../images/projects/cctvDes.png'
+import cctvph2 from '../../../images/projects/ccti8.png'
+
+import backWard1 from '../../../images/projects/backward1.png'
+import backWard2 from '../../../images/projects/backward3psd.png'
+
 import './Projects.css'
 
 const Projects = () => {
@@ -28,14 +32,14 @@ const Projects = () => {
                             </Box>
                             <Grid sx={{display:'flex'}}>
                                 <Grid item xs={12} >
-                                <img  style={{height:'cover', marginTop:'50px'}} src={cctv} alt="projPicture" />
+                                <img style={{marginTop:'10px'}} src={cctv} alt="projPicture" />
                                 </Grid>
                                 <Grid item xs={12}  sx={{display:'flex', justifyContent:"space-around"}}>
                                 <Grid  item xs={6}>
-                                    <img style={{height:'cover', width:"50%", marginTop:'60px'}} src={cctvph1} alt="projPicture" />
+                                    <img sx={{sm:'50px'}} style={{height:'cover', width:"90%", marginTop:'60px'}} src={cctvph2} alt="projPicture" />
                                 </Grid>
                                 <Grid  item xs={6}>
-                                    <img style={{height:'cover', width:"80%", marginTop:'50px'}} src={cctvph1} alt="projPicture" />
+                                    <img style={{height:'cover', width:"70%", marginTop:'50px'}} src={cctvph1} alt="projPicture" />
                                 </Grid>
                                 </Grid>
                             </Grid>
@@ -60,18 +64,12 @@ const Projects = () => {
                             </Box>
                             <Grid sx={{display:'flex'}}>
                                 <Grid item xs={12} >
-                                <img  style={{height:'cover', marginTop:'50px'}} src={cctv} alt="projPicture" />
+                                <img  style={{ marginTop:'15px', position:'relative'}} src={backWard1} alt="projPicture" />
                                 </Grid>
-                                <Grid item xs={12}  sx={{display:'flex', justifyContent:"space-around"}}>
-                                <Grid  item xs={6}>
-                                    <img style={{height:'cover', width:"50%", marginTop:'60px'}} src={cctvph1} alt="projPicture" />
-                                </Grid>
-                                <Grid  item xs={6}>
-                                    <img style={{height:'cover', width:"80%", marginTop:'50px'}} src={cctvph1} alt="projPicture" />
-                                </Grid>
-                                </Grid>
+                                <Grid item xs={12} >
+                                <img  style={{ marginTop:'15px', position:'relative'}} src={backWard2} alt="projPicture" />
+                                </Grid>      
                             </Grid>
-                            
                             
                         </Box>
                     </Grid>
@@ -92,19 +90,17 @@ const Projects = () => {
                             </Box>
                             <Grid sx={{display:'flex'}}>
                                 <Grid item xs={12} >
-                                <img  style={{height:'cover', marginTop:'50px'}} src={cctv} alt="projPicture" />
+                                <img style={{marginTop:'10px'}} src={cctv} alt="projPicture" />
                                 </Grid>
                                 <Grid item xs={12}  sx={{display:'flex', justifyContent:"space-around"}}>
                                 <Grid  item xs={6}>
-                                    <img style={{height:'cover', width:"50%", marginTop:'60px'}} src={cctvph1} alt="projPicture" />
+                                    <img sx={{sm:'50px'}} style={{height:'cover', width:"90%", marginTop:'60px'}} src={cctvph2} alt="projPicture" />
                                 </Grid>
                                 <Grid  item xs={6}>
-                                    <img style={{height:'cover', width:"80%", marginTop:'50px'}} src={cctvph1} alt="projPicture" />
+                                    <img style={{height:'cover', width:"70%", marginTop:'50px'}} src={cctvph1} alt="projPicture" />
                                 </Grid>
                                 </Grid>
                             </Grid>
-                            
-                            
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -124,21 +120,21 @@ const Projects = () => {
                             </Box>
                             <Grid sx={{display:'flex'}}>
                                 <Grid item xs={12} >
-                                <img  style={{height:'cover', marginTop:'50px'}} src={cctv} alt="projPicture" />
+                                <img style={{marginTop:'10px'}} src={cctv} alt="projPicture" />
                                 </Grid>
                                 <Grid item xs={12}  sx={{display:'flex', justifyContent:"space-around"}}>
                                 <Grid  item xs={6}>
-                                    <img style={{height:'cover', width:"50%", marginTop:'60px'}} src={cctvph1} alt="projPicture" />
+                                    <img sx={{sm:'50px'}} style={{height:'cover', width:"90%", marginTop:'60px'}} src={cctvph2} alt="projPicture" />
                                 </Grid>
                                 <Grid  item xs={6}>
-                                    <img style={{height:'cover', width:"80%", marginTop:'50px'}} src={cctvph1} alt="projPicture" />
+                                    <img style={{height:'cover', width:"70%", marginTop:'50px'}} src={cctvph1} alt="projPicture" />
                                 </Grid>
                                 </Grid>
                             </Grid>
-                            
-                            
                         </Box>
                     </Grid>
+                    
+                   
         
             
                 </Grid>
