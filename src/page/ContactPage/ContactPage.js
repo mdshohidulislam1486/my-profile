@@ -1,5 +1,5 @@
 
-import { Container, Grid, Typography } from '@mui/material';
+import { Container, Grid, TextField, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import Navigation from '../../page/shared/Navigation/Navigation'
@@ -36,8 +36,8 @@ const ContactPage = () => {
                 <Container>
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={2}>
-                            <Grid item xs={12} md={6}>
-                                <Box>
+                            <Grid item xs={12} md={4}>
+                                <Box sx={{my:3}}>
                                     <Typography>CONTACT</Typography>
                                     <Typography variant='h5' sx={{fontWeight:600}}>
                                         Let's work --- and <br/> gorow together 
@@ -51,18 +51,25 @@ const ContactPage = () => {
                                 </Box>
                         
                             </Grid>
-                            <Grid item xs={12} md={6}>
-                                <Typography>
+                            <Grid item xs={12} md={8}>
+                                <Typography sx={{my:3}}>
                                 Got a project? Drop me a line if you want to work together on something exciting. Big or small. Mobile or web.
                                 </Typography>
                                 <form ref={form} onSubmit={sendEmail}>
-                                    <label>Name</label>
-                                    <input type="text" name="user_name" />
-                                    <label>Email</label>
-                                    <input type="email" name="user_email" />
-                                    <label>Message</label>
-                                    <textarea name="message" />
-                                    <input type="submit" value="Send" />
+                                    <TextField sx={{mr:2}} id="standard-basic" type="text" name="user_name"  label="Name" variant="standard" />
+                                    <TextField  id="standard-basic" type="email" name="user_email"  label="Email" variant="standard" />
+                                    <br/>
+                                    <TextField
+                                    id="standard-multiline-static"
+                                    label="Your Message"
+                                    multiline
+                                    rows={4}
+        
+                                    variant="standard"
+                                    name="message"
+                                    />
+                                    <br/>
+                                    <input type="submit" value="Send your message" />
                                 </form>
                                 
                             
