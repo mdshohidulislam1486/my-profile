@@ -5,6 +5,7 @@ import "./Banner.css"
 import proPic from '../../../images/myPicture.png'
 
 
+
 const Banner = () => {
     return (
         <Box  className='banner-bg'>
@@ -24,7 +25,7 @@ const Banner = () => {
                         </Typography>
                     </Grid>
                     <Grid item xs={2} md={6}>
-                        <img src={proPic}  alt='myPciture'/>
+                        <img style={{width:'70%'}} src={proPic}  alt='myPciture'/>
                     </Grid>
             
                 </Grid>
