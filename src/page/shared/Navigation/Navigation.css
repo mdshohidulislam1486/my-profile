@@ -46,27 +46,30 @@ overflow: hidden;
 }
 .home-bac{
    color:#333;
-    font-size: 150px;
+    font-size: 180px;
     position: absolute;
     opacity: 0.1;
     left: 50%;
     top: 50%;
-    width:100%;
     transform: translate(-50%, -50%);
     font-weight: 800;
 }
-.close-menu{
+
+.close-menu{  
     width: 25px;
     position: absolute;
-    right:80px;
-    top:50px;
-    color: saddlebrown;
+    right:2em;
+    top:2em;
+    color: #fff;
     cursor: pointer;
-    transition: 2s  ease-in-out all infinite;
+    transform: rotate(90deg) scale(1);
+    transition: all 1s ease-in-out;
+
 }
 .close-menu:hover{
-transform: rotateY(50deg) rotate(50deg);
+    transform: rotate(150deg) scale(1.1);
 }
+
 .menu-icon{
     width: 30px;
     cursor:pointer;
@@ -78,3 +81,15 @@ transform: rotateY(50deg) rotate(50deg);
 .menu-hover:hover{
     transform: scale(1.1);
 }
+
+@media only screen and (max-width: 800px) {
+    .home-bac{
+      font-size: 100px;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .home-bac{
+      font-size: 50px;
+    }
+  }
