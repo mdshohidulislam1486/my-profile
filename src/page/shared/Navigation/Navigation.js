@@ -59,7 +59,7 @@ const Navigation = () => {
                 </nav>
                 <Box className="menu-hover" sx={{display:'flex', marginTop:3, marginRight:{xs:'1em', sm:'3em'} }}>
                 <small style={{paddingRight:'10px'}}>MENU</small>
-                 <DehazeIcon onClick={handleOpenMenu} className='menu-icon'/>
+                 <DehazeIcon onClick={()=>handleOpenMenu()} className='menu-icon'/>
                 </Box>
 
              </Box>

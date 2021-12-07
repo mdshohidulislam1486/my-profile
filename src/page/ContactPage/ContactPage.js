@@ -27,7 +27,7 @@ const ContactPage = () => {
     }
     
     return (
-        <Box>
+        <Box id='overflow-hidden'>
             <Navigation></Navigation>
             <Box>
                 <p>
