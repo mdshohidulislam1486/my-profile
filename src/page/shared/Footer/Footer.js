@@ -1,15 +1,27 @@
 import { Typography,  Grid, Container} from '@mui/material';
 import { Box, width } from '@mui/system';
 import React from 'react';
+import './Footer.css'
 
 
 const Footer = () => {
     return (
         <Box>
           <Container>
+
+          <Box className='footer-line' sx={{textAlign:'center', my:7}}>
+              <Typography>
+                  LOOKING FOR A DEVELOPER?
+              </Typography>
+              <Typography>
+              Let’s work together →
+              </Typography>
+
+          </Box>
+
           <Box >
            <Grid sx={{display:'flex', alignItems:'center'}} container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                <Grid item sm={12} md={5} sx={{display:"flex", alignItems:'center'}}>
+                <Grid item sm={12} md={5}>
                     <Box>
                         <Typography variant='h6'>
                         Contact information —
