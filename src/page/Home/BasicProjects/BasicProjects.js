@@ -1,4 +1,4 @@
-import { Container, Typography } from '@mui/material';
+import { Button, Container, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import Grid from '@mui/material/Grid';
 import React from 'react';
@@ -46,13 +46,11 @@ const BasicProjects = () => {
                 Latest Projects 
             </Typography>
 
-
             <Box sx={{ width: '100%' }}>
-            <ImageList sx={{ width:'100%', height:'100%' }} gap={12}>
-                <ImageListItem key="Subheader" cols={2}>
-                        </ImageListItem>
+            <ImageList  sx={{ width:'100%', height:'100%' }} gap={12}>
                         {itemData.map((item) => (
-                            <ImageListItem key={item.img}>
+                            <ImageListItem className='img-list' key={item.img}>
+                                
                             <img
                                 src={`${item.img}?w=248&fit=crop&auto=format`}
                                 srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
@@ -60,17 +58,20 @@ const BasicProjects = () => {
                                 loading="lazy"
                             />
                             <ImageListItemBar
+                                className='hide-footer'
                                 title={item.title}
                                 subtitle={item.author}
                                 actionIcon={
                                 <IconButton
                                     sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                                     aria-label={`info about ${item.title}`}
+                                    
                                 >
-                                    <InfoIcon />
+                                    <Button  className='custom-btn' sx={{color:'#fff', fontWeight:'700'}}>See Details</Button>
                                 </IconButton>
                                 }
                             />
+                            
                             </ImageListItem>
                         ))}`
                 </ImageList>
