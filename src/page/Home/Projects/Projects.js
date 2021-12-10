@@ -23,6 +23,14 @@ const Projects = () => {
     return (
        <Box>
             <Container>
+                <Box>
+                    <Typography sx={{color:'#878a8f'}}>
+                        More projects coming soon 
+                    </Typography>
+                    <Typography sx={{color:'#0f141e', fontWeight:"800", letterSpacing:'-.01em'}} variant="h3" >
+                        Full Stack Stie
+                    </Typography>
+                </Box>
                 <Grid sx={{justifyContent:'space-around', alignItems:'center'}} container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} >
                     <Grid item xs={12} md={6}>
                         <Box className="project-height" sx={{color:'#fff', p:3, backgroundColor:"rgba(50, 50, 120)"}}>
