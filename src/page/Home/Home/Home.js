@@ -4,6 +4,7 @@ import Navigation from '../../shared/Navigation/Navigation';
 import Banner from '../Banner/Banner';
 import BasicProjects from '../BasicProjects/BasicProjects';
 import Projects from '../Projects/Projects';
+import Travel from '../Travel/Travel';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <Banner></Banner>
             <Projects></Projects>
             <BasicProjects></BasicProjects>
+            <Travel></Travel>
             <Footer></Footer>
         </div>
     );

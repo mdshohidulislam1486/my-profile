@@ -42,12 +42,12 @@ const BasicProjects = () => {
             <Typography sx={{color:'#878a8f'}}>
                 Simple React, HTML, and CSS Projects 
             </Typography>
-            <Typography sx={{color:'#0f141e', fontWeight:"800", letterSpacing:'-.01em'}} variant="h3"  >
+            <Typography sx={{color:'#0f141e', fontWeight:"800", letterSpacing:'-.01em'}} variant="h4"  >
                 Latest Projects 
             </Typography>
 
             <Box sx={{ width: '100%' }}>
-            <ImageList  sx={{ width:'100%', height:'100%' }} gap={12}>
+            <ImageList  sx={{ width:'100%', height:'100%' }} gap={20}>
                         {itemData.map((item) => (
                             <ImageListItem className='img-list' key={item.img}>
                                 

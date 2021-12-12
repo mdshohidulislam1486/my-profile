@@ -1,6 +1,6 @@
 
 .img-list{
-    border:1px solid rgba(0,0,0, .7);
+    border:5px solid rgba(0,0,0, .7);
 }
 .img-list .custom-btn{
     filter: opacity(0);

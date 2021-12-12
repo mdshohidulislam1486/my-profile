@@ -27,7 +27,7 @@ const Projects = () => {
                     <Typography sx={{color:'#878a8f'}}>
                         More projects coming soon 
                     </Typography>
-                    <Typography sx={{color:'#0f141e', fontWeight:"800", letterSpacing:'-.01em'}} variant="h3" >
+                    <Typography sx={{color:'#0f141e', fontWeight:"800", letterSpacing:'-.01em'}} variant="h4" >
                         Full Stack Stie
                     </Typography>
                 </Box>
