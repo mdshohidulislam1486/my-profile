@@ -1,0 +1,8 @@
+.travel-img img{
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.travel-img:hover img{
+    filter: blur(2);
+    transform: scale(1.02);
+}
