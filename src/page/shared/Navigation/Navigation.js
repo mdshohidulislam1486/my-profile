@@ -10,11 +10,11 @@ const Navigation = () => {
   
 
     const handleCloseMenu=()=>{
-
-        const myNav = document.getElementById('my-nav')
-        myNav.style.top ='-100vh'
         const myBody = document.getElementsByTagName("BODY")[0];
         myBody.style.overflow = 'scroll'
+        const myNav = document.getElementById('my-nav')
+        myNav.style.top ='-100vh'
+        
     }
 
     const handleOpenMenu=()=>{
@@ -22,15 +22,11 @@ const Navigation = () => {
         const myBody = document.getElementsByTagName("BODY")[0];
         myBody.style.overflow = 'hidden'
         myNav.style.zIndex = '2'
-
         myNav.style.top ='0'
+        
     }
    
     
-    const handleRelode = ()=>{
-        window.location.reload()
-    }
-
     return (
         
          <Box style={{textAlign:'center'}} sx={{display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
@@ -47,10 +43,10 @@ const Navigation = () => {
                 <nav  id='my-nav' className='my-nav'>
                  <h2 className='home-bac' >Developer</h2>
                  <ul>
-                     <li  onClick={handleRelode}><Link  to='/home'>Home</Link></li>
+                     <li  onClick={handleCloseMenu}><Link  to='/home'>Home</Link></li>
                      <li><Link to="/home">Experience</Link></li>
                      <li><a  target='_blank' rel="noreferrer" href="https://drive.google.com/file/d/1xyV3Mec1zRegJTJaZv0GWp-3ML5ncky2/view?usp=sharing" alt='ffh'>Resume</a></li>
-                     <li><Link to="/contact">Contact</Link></li>
+                     <li><Link onClick={handleCloseMenu} to="/contact">Contact</Link></li>
                      <li><Link to="/home">About</Link></li>
                  </ul>
                  

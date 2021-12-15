@@ -14,7 +14,6 @@ const Home = () => {
             <Projects></Projects>
             <BasicProjects></BasicProjects>
             <Travel></Travel>
-            <Footer></Footer>
         </div>
     );
 };
