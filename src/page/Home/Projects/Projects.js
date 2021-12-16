@@ -24,7 +24,7 @@ const Projects = () => {
        <Box >
             <Container>
                 <Box sx={{my:7}}>
-                    <Typography sx={{color:'#878a8f'}}>
+                    <Typography variant='caption' sx={{color:'#878a8f', letterSpacing:'.3em'}}>
                         More projects coming soon 
                     </Typography>
                     <Typography sx={{color:'#0f141e', fontWeight:"800", letterSpacing:'-.01em'}} variant="h4" >
