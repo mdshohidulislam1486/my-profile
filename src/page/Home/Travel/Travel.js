@@ -8,12 +8,12 @@ import './Travel.css'
 const Travel = () => {
     return (
       <Container>
-          <Box>
-          <Typography sx={{color:'#878a8f'}}>
+          <Box sx={{my:8}}>
+          <Typography variant='caption' sx={{color:'#878a8f', letterSpacing:'.3em'}}>
               Traveling
           </Typography>       
           <Typography sx={{color:'#0f141e', fontWeight:"800", letterSpacing:'-.01em'}} variant="h4">
-              Laterst Tour Pictures
+              Latest Tour Pictures
           </Typography>       
           </Box>
           <Box sx={{ width: '100%' }}>

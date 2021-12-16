@@ -8,3 +8,28 @@
     top: 50%;
     margin-top: 4em;
 }
+.round-nav2{
+    border: 3px solid #878a8f;
+    padding: 5px 9px;
+    border-radius: 55%;
+    color: #878a8f;
+}
+
+.link-follow a{
+    text-decoration: none;
+    color: rgba(0,0,0,.9);
+    font-size: .9em;
+    font-family: sans-serif;
+}
+
+.hover-underline{
+    display: inline-block;
+    transition: all .3s ease-in;
+    border-bottom: 5px solid rgba(0,0,0, 0.001);
+
+
+}
+.hover-underline:hover{
+    cursor: pointer;
+    border-bottom: 5px solid rgba(0,0,0, 1);
+}

@@ -10,11 +10,12 @@ const Footer = () => {
           <Container>
 
           <Box className='footer-line' sx={{textAlign:'center', my:7}}>
-              <Typography>
+              <Typography variant='caption'  sx={{color:"#878a8f"}}>
                   LOOKING FOR A DEVELOPER?
               </Typography>
-              <Typography>
-              Let’s work together →
+              <br/>
+              <Typography className='hover-underline' variant='h3' sx={{fontWeight:'800'}}>
+              Let's work together →
               </Typography>
 
           </Box>
@@ -23,17 +24,18 @@ const Footer = () => {
            <Grid sx={{display:'flex', alignItems:'center'}} container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                 <Grid item sm={12} md={5}>
                     <Box>
-                        <Typography variant='h6'>
+                        <Typography variant='body1' sx={{color:'#0f141e', fontWeight:'700'}}>
                         Contact information —
                         </Typography>
-                        <Typography variant="body2">
+                        <Typography variant="body2" sx={{color:'#878a8f'}}>
                         Feel free to reach out to me any time. I prefer to talk over email, especially since we may be a few time zones away.
                         </Typography>
-                        <Typography variant="body2">
-                        E: damian.watracz@gmail.com
+                        <Typography variant="caption" sx={{fontWeight:'600'}} >
+                        <span style={{color:'#878a8f'}}>E:</span> snaeem.wd@gmail.com
                         </Typography>
-                        <Typography variant="body2">
-                        P: +48-517-512-348
+                        <br/>
+                        <Typography sx={{fontWeight:'600'}} variant="caption">
+                        <span style={{color:'#878a8f'}}>P:</span> +8801681094634 (WhatsApp)
                         </Typography>
 
                     </Box>
@@ -44,11 +46,11 @@ const Footer = () => {
                 </Grid>
 
                 <Grid item xm={8} sm={4} md={2}>
-                    <Typography variant='h6'>
+                    <Typography variant='body1' sx={{color:'#0f141e', fontWeight:'700'}}>
                     Latest projects —
                     </Typography>
-                    <Box variant="body2" sx={{display:'flex', flexDirection:'column'}}>
-                        <a  href="https://www.google.com/" rel="noreferrer" target='_blank' alt='myNewPro'>Iceland</a>
+                    <Box className='link-follow' variant="body2" sx={{display:'flex', flexDirection:'column'}}>
+                        <a   href="https://www.google.com/" rel="noreferrer" target='_blank' alt='myNewPro'>Iceland</a>
                         <a href="https://www.google.com/" rel="noreferrer" target='_blank' alt='myNewPro'>Iceland</a>
                         <a href="https://www.google.com/" rel="noreferrer" target='_blank' alt='myNewPro'>Iceland</a>
                         <a href="https://www.google.com/" rel="noreferrer" target='_blank' alt='myNewPro'>Iceland</a>
@@ -59,25 +61,25 @@ const Footer = () => {
 
                 <Grid item xs={8} sm={4} md={3}>
                     <Box>
-                        <Typography variant='h6'>
+                        <Typography variant='body1' sx={{color:'#0f141e', fontWeight:'700'}}>
                         Current availability —
                         </Typography>
-                        <Typography variant="body2">
-                        I usually work on several projects but I’ll be happy to discuss new opportunities. Let’s get in touch
+                        <Typography variant="body2" sx={{color:'#878a8f'}}>
+                        I usually work on several projects but I'll be happy to discuss new opportunities. Let's get in touch
                         </Typography>
                     </Box>
               
                 </Grid>
                 <Grid item xs={6} sm={4} md={2}>
-                    <Box>
-                        <Typography variant='h6'>
+                    <Box className='link-follow'>
+                        <Typography variant='body1' sx={{color:'#0f141e', fontWeight:'700'}}>
                         Follow me on —
                         </Typography>
                         <Box variant="body2" sx={{display:'flex', flexDirection:'column'}}>
-                        <a href="https://www.google.com/" rel="noreferrer" target='_blank' alt='myNewPro'>Facebook</a>
-                        <a href="https://www.google.com/" rel="noreferrer" target='_blank' alt='myNewPro'>Instagram</a>
-                        <a href="https://www.google.com/" rel="noreferrer" target='_blank' alt='myNewPro'>LinkedIn</a>
-                        <a href="https://www.google.com/" rel="noreferrer" target='_blank' alt='myNewPro'>GitHub</a>
+                        <a href="https://www.facebook.com/md.shohidulislam.52/" rel="noreferrer" target='_blank' alt='myNewPro'>Facebook</a>
+                        <a href="https://www.instagram.com/naeemkhan8954/" rel="noreferrer" target='_blank' alt='myNewPro'>Instagram</a>
+                        <a href="https://www.linkedin.com/in/md-shohidul-islam-88560a155/" rel="noreferrer" target='_blank' alt='myNewPro'>LinkedIn</a>
+                        <a href="https://github.com/mdshohidulislam1486" rel="noreferrer" target='_blank' alt='myNewPro'>GitHub</a>
                         </Box>
                     </Box>
 
@@ -87,11 +89,12 @@ const Footer = () => {
 
            </Box>
 
-           <Box sx={{display:'flex', alignItems:'center' }}>
-                <div><h5 className='round-nav'>N</h5></div>
-                <div style={{lineHeight:'2px', marginLeft:'10px'}}>
-                    <h3>Md Shohidul Islam</h3>
-                    <p style={{fontSize:'.8em'}}> Junior Full Stack Web Developer</p>
+           <Box sx={{display:'flex', alignItems:'center', mt:5 }}>
+                <div><h5 className='round-nav2'>S</h5></div>
+                <div style={{lineHeight:'2px', display:'flex', marginLeft:'10px', flexDirection:'column'}}>
+                    <Typography style={{ color:'#878a8f'}} variant='caption'> © 2020 - 2021 Shohidul (Naeem) </Typography>
+
+                    <Typography variant='caption' style={{ color:'#878a8f'}}> Junior Full Stack Web Developer</Typography>
                 </div>
             </Box>
           </Container>

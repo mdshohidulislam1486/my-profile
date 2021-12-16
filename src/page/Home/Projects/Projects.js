@@ -21,9 +21,9 @@ import './Projects.css'
 
 const Projects = () => {
     return (
-       <Box>
+       <Box >
             <Container>
-                <Box>
+                <Box sx={{my:7}}>
                     <Typography sx={{color:'#878a8f'}}>
                         More projects coming soon 
                     </Typography>
