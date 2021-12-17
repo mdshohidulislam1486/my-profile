@@ -8,6 +8,9 @@ import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
+import travel1 from '../../../images/Travel/travel1.png'
+import travel2 from '../../../images/Travel/travel2.png'
+import travel3 from '../../../images/Travel/travel5.png'
 
 const itemData = [
     {
@@ -46,35 +49,55 @@ const BasicProjects = () => {
                 Latest Projects 
             </Typography>
 
-            <Box sx={{ width: '100%', mt:7 }}>
-            <ImageList  sx={{ width:'100%', height:'100%' }} gap={20}>
-                        {itemData.map((item) => (
-                            <ImageListItem className='img-list' key={item.img}>
-                                
-                            <img
-                                src={`${item.img}?w=248&fit=crop&auto=format`}
-                                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                alt={item.title}
-                                loading="lazy"
-                            />
-                            <ImageListItemBar
-                                className='hide-footer'
-                                title={item.title}
-                                subtitle={item.author}
-                                actionIcon={
-                                <IconButton
-                                    sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                                    aria-label={`info about ${item.title}`}
-                                    
-                                >
-                                    <Button  className='custom-btn' sx={{color:'#fff', fontWeight:'700'}}>See Details</Button>
-                                </IconButton>
-                                }
-                            />
-                            
-                            </ImageListItem>
-                        ))}`
-                </ImageList>
+            <Box sx={{ width: '100%', mt:6 }}>
+            <Grid className='wrapper' container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                    <Grid className='travel-img img-box' xs={12}  item sm={6} md={3}>
+                        <Box className='info'>
+                        <img style={{ width:'100%'}} src='https://i.ibb.co/tXSN7S4/doctor.jpg' alt="nature" />
+                        <h1>Section 1</h1>
+                        </Box>
+                        <Box className='desc'>
+                            <h1>Detials 1</h1>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, necessitatibus beatae inventore libero tenetur in quo, debitis, modi eveniet labore eaque qui nam! Architecto, nihil doloribus! </p>
+
+                        </Box>
+                    </Grid>
+                    <Grid className='travel-img img-box' xs={12}  item sm={6} md={3}>
+                        <Box className='info'>
+                        <img style={{ width:'100%'}} src='https://i.ibb.co/f91XcBL/hero.jpg' alt="nature" />
+                        <h1>Section 1</h1>
+                        </Box>
+                        <Box className='desc'>
+                            <h1>Detials 1</h1>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, necessitatibus beatae inventore libero tenetur in quo, debitis, modi eveniet labore eaque qui nam! Architecto, nihil doloribus! </p>
+
+                        </Box>
+                    </Grid>
+                    <Grid className='travel-img img-box' xs={12}  item sm={6} md={3}>
+                        <Box className='info'>
+                        <img style={{width:'100%'}} src='https://i.ibb.co/Sry3cY1/honda.jpg' alt="nature" />
+                        <h1>Section 1</h1>
+                        </Box>
+                        <Box className='desc'>
+                            <h1>Detials 1</h1>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, necessitatibus beatae inventore libero tenetur in quo, debitis, modi eveniet labore eaque qui nam! Architecto, nihil doloribus! </p>
+
+                        </Box>
+                    </Grid>
+                    <Grid className='travel-img img-box' xs={12}  item sm={6} md={3}>
+                        <Box className='info'>
+                        <img style={{width:'100%'}} src='https://i.ibb.co/CH7MZ1T/emajon.jpg' alt="nature" />
+                        <h1>Section 1</h1>
+                        </Box>
+                        <Box className='desc'>
+                            <h1>Detials 1</h1>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, necessitatibus beatae inventore libero tenetur in quo, debitis, modi eveniet labore eaque qui nam! Architecto, nihil doloribus! </p>
+
+                        </Box>
+                    </Grid>
+                   
+                    
+            </Grid>
             </Box>
         </Container>
     );
