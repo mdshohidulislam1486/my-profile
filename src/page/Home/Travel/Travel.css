@@ -35,7 +35,7 @@ position: relative;
 
 }
 .img-box:hover .info::before{
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .img-box .info img{
@@ -58,7 +58,7 @@ position: relative;
 .img-box .desc{
     position: absolute;
     top:100%;
-    left:0;
+    /* left:0; */
     color:rgb(247, 247, 247);
     text-align: center;
     height: 100%;

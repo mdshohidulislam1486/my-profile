@@ -1,0 +1,12 @@
+.add-project form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.add-project form input{
+    width: 70%;
+    margin: 5px;
+}

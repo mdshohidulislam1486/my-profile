@@ -3,41 +3,9 @@ import { Box } from '@mui/system';
 import Grid from '@mui/material/Grid';
 import React from 'react';
 import './BasicProject.css'
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
-import IconButton from '@mui/material/IconButton';
-import InfoIcon from '@mui/icons-material/Info';
-import travel1 from '../../../images/Travel/travel1.png'
-import travel2 from '../../../images/Travel/travel2.png'
-import travel3 from '../../../images/Travel/travel5.png'
 
-const itemData = [
-    {
-      img:"https://i.ibb.co/tXSN7S4/doctor.jpg",
-      title: 'Breakfast',
-      author: '@bkristastucchio',
-      rows: 2,
-      cols: 2,
-      featured: true,
-    },
-    {
-      img: 'https://i.ibb.co/f91XcBL/hero.jpg',
-      title: 'Burger',
-      author: '@rollelflex_graphy726',
-    },
-    {
-      img: 'https://i.ibb.co/Sry3cY1/honda.jpg',
-      title: 'Camera',
-      author: '@helloimnik',
-    },
-    {
-      img: 'https://i.ibb.co/CH7MZ1T/emajon.jpg',
-      title: 'Coffee',
-      author: '@nolanissac',
-      cols: 2,
-    }
-  ];
+
+
 
 const BasicProjects = () => {
     return (
