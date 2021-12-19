@@ -5,13 +5,14 @@ import './AddProjects.css'
 import axios from 'axios';
 
 const AddProjects = () => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
-  const onSubmit = data => {
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    const onSubmit = data => {
       console.log(data)
       axios.post('http://localhost:5000/projects', data)
       .then(res =>{
         if(res.data.insertedId){
             alert('New data added successfully')
+            reset()
         }
       })
     };
