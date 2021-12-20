@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Typography from '@mui/material/Typography';
 import { Box, Container } from '@mui/material';
 import MyProject from './MyProject';
+import Navigation from '../shared/Navigation/Navigation';
 
 const MyProjects = () => {
 const [projects, setProjects]= useState([])
@@ -15,6 +16,8 @@ useEffect(() =>{
 
 
     return (
+        <>
+        <Navigation></Navigation>
         <Container>
             <Box sx={{mt:8, display:'flex', flexWrap:'wrap', justifyContent:'center'}}>
                 
@@ -28,6 +31,7 @@ useEffect(() =>{
 
             </Box>
         </Container>
+        </>
     );
 };
 

@@ -44,7 +44,7 @@ const Navigation = () => {
                  <h2 className='home-bac' >Developer</h2>
                  <ul>
                      <li  onClick={handleCloseMenu}><Link  to='/home'>Home</Link></li>
-                     <li><Link to="/home">Experience</Link></li>
+                     <li><Link onClick={handleCloseMenu} to="/myprojects">My-Projects</Link></li>
                      <li><a  target='_blank' rel="noreferrer" href="https://drive.google.com/file/d/1xyV3Mec1zRegJTJaZv0GWp-3ML5ncky2/view?usp=sharing" alt='ffh'>Resume</a></li>
                      <li><Link onClick={handleCloseMenu} to="/contact">Contact</Link></li>
                      <li><Link to="/home">About</Link></li>
