@@ -14,7 +14,7 @@ const Footer = () => {
                   LOOKING FOR A DEVELOPER?
               </Typography>
               <br/>
-              <Typography className='hover-underline' variant='h3' sx={{fontWeight:'800'}}>
+              <Typography className='hover-underline'  sx={{fontWeight:'800', fontSize:'3.5vw'}}>
               Let's work together →
               </Typography>
 

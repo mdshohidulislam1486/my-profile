@@ -5,6 +5,7 @@ import AddProjects from './page/AddProjects/AddProjects';
 import ContactPage from './page/ContactPage/ContactPage';
 import Home from './page/Home/Home/Home';
 import MyProjects from './page/MyPorjects/MyProjects';
+import ProjectsDetails from './page/ProjectsDetails/ProjectsDetails';
 import Footer from './page/shared/Footer/Footer';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/contact" element={<ContactPage/>}/>
           <Route path="/addproject" element={<AddProjects/>}/>
           <Route path="/myprojects" element={<MyProjects/>}/>
+          <Route path="/projectdetails/:projectid" element={<ProjectsDetails/>}/>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

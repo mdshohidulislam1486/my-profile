@@ -5,9 +5,12 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import { Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const MyProject = ({project}) => {
-    const {name, img1} = project
+    const {name, img1, _id} = project
+
+   
     return (
                 <Card sx={{ maxWidth: 345, m:1}}>
                     <CardMedia
@@ -27,7 +30,7 @@ const MyProject = ({project}) => {
                     </CardContent>
                     <CardActions>
                         <Button size="small">Share</Button>
-                        <Button size="small">Learn More</Button>
+                        <Button size="small"><Link to={`/projectdetails/${_id}`}>Learn More</Link></Button>
                     </CardActions>
                 </Card>
     );
