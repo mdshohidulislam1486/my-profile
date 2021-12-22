@@ -13,6 +13,7 @@ const Navigation = () => {
         const myBody = document.getElementsByTagName("BODY")[0];
         myBody.style.overflow = 'scroll'
         const myNav = document.getElementById('my-nav')
+        myNav.style.backgroundColor='rgba(0,0,0,.90)'
         myNav.style.top ='-100vh'
         
     }
@@ -20,6 +21,7 @@ const Navigation = () => {
     const handleOpenMenu=()=>{
         const myNav = document.getElementById('my-nav')
         const myBody = document.getElementsByTagName("BODY")[0];
+        myNav.style.backgroundColor='rgba(0,0,0)'
         myBody.style.overflow = 'hidden'
         myNav.style.zIndex = '2'
         myNav.style.top ='0'

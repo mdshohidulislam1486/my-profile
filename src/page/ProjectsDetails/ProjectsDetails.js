@@ -26,9 +26,9 @@ const ProjectsDetails = () => {
 
 
     return (
-
+        <><Navigation/>
         <Container>
-            <Navigation/>
+            
             <Box>
                 <Grid container spacing={2} sx={{mt:7, display:'flex', alignItems:'center'}}>
                     <Grid item xs={12} md={6} sx={{justifyContent:'center', display:'flex'}}>
@@ -104,6 +104,7 @@ const ProjectsDetails = () => {
                 </Grid>
             </Box>
         </Container>
+        </>
     );
 };
 
