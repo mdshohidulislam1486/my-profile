@@ -18,8 +18,17 @@ import book2 from '../../../images/projects/bookSearc2.png'
 import book3 from '../../../images/projects/bookSearch1.png' 
 
 import './Projects.css'
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
+
+
+    const projectId1 = '61bce522a154265eacadcc2c'
+    const projectId2 = '61bce522a154265eacadcc2c'
+    const projectId3 = '61bce522a154265eacadcc2c'
+    const projectId4 = '61bce522a154265eacadcc2c'
+    
+
     return (
        <Box >
             <Container>
@@ -45,7 +54,11 @@ const Projects = () => {
                                 </Grid>
                             </Grid>
                             </Box>
-                            <Box> <Button className='project-button'>View Details -</Button></Box>
+                            <Box> 
+                                <Link style={{textDecoration:'none'}} to={`/projectdetails/${projectId1}`}>
+                                <Button className='project-button'>View Details -</Button>
+                                </Link>
+                            </Box>
                             </Box>
                             <Grid sx={{display:'flex'}}>
                                 <Grid item xs={12} >
@@ -75,7 +88,11 @@ const Projects = () => {
                                 </Grid>
                             </Grid>
                             </Box>
-                            <Box> <Button className='project-button'>View Details -</Button></Box>
+                            <Box> 
+                                <Link style={{textDecoration:'none'}} to={`/projectdetails/${projectId1}`}>
+                                <Button className='project-button'>View Details -</Button>
+                                </Link>
+                            </Box>
                             </Box>
                             <Grid sx={{display:'flex'}}>
                                 <Grid item xs={12} >
@@ -101,7 +118,11 @@ const Projects = () => {
                                 </Grid>
                             </Grid>
                             </Box>
-                            <Box> <Button className='project-button'>View Details -</Button></Box>
+                            <Box> 
+                                <Link style={{textDecoration:'none'}} to={`/projectdetails/${projectId1}`}>
+                                <Button className='project-button'>View Details -</Button>
+                                </Link>
+                            </Box>
                             </Box>
                             <Grid sx={{display:'flex'}}>
                                 <Grid item xs={12} >
@@ -132,7 +153,11 @@ const Projects = () => {
                                 </Grid>
                             </Grid>
                             </Box>
-                            <Box> <Button className='project-button'>View Details -</Button></Box>
+                            <Box> 
+                                <Link style={{textDecoration:'none'}} to={`/projectdetails/${projectId1}`}>
+                                <Button className='project-button'>View Details -</Button>
+                                </Link>
+                            </Box>
                             </Box>
                             <Grid sx={{display:'flex'}}>
                                 <Grid item xs={12} >

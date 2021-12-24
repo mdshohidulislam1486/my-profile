@@ -6,7 +6,6 @@ import './ProjectDetails.css'
 
 
 const ProjectsDetails = () => {
-    const navigate = useNavigate()
     const {projectid} = useParams()
 
     const [myProjects, setMyprojects] = useState()
