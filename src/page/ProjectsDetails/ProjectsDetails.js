@@ -45,10 +45,10 @@ const ProjectsDetails = () => {
                     </Grid>
                     <Grid item xs={12} md={6} sx={{justifyContent:'center', display:'flex'}} order={{ xs:1, sm:1, md: 2 }}>
                         <Box sx={{width:'90%', height:'90%', position:'relative'}}>
-                            <Typography variant='h5'>
+                            <Typography variant='h5' color='#000'>
                                 Used Teachnology
                             </Typography>
-                            <Typography variant='body1'>
+                            <Typography variant='body1' color='#878a8f'>
                                 {currentProject?.usedTeachnology}
                             </Typography>
                         </Box>
@@ -58,7 +58,7 @@ const ProjectsDetails = () => {
                     
                     <Grid item xs={12} md={6} sx={{justifyContent:'center', display:'flex'}}>
                         <Box sx={{width:'90%', height:'90%', position:'relative'}}>
-                            <Typography variant='h5'>
+                            <Typography variant='h5' color='#000'>
                                Main Features
                             </Typography>
                             <Box>
@@ -70,7 +70,7 @@ const ProjectsDetails = () => {
                                         sx={{ display: 'inline' }}
                                         component="span"
                                         variant="body2"
-                                        color="text.primary"
+                                        color="#878a8f"
                                     >
                                         {currentProject?.feature1}
                                     </Typography>
@@ -79,7 +79,7 @@ const ProjectsDetails = () => {
                                         sx={{ display: 'inline' }}
                                         component="span"
                                         variant="body2"
-                                        color="text.primary"
+                                        color="#878a8f"
                                     >
                                         {currentProject?.feature2}
                                     </Typography>
@@ -87,7 +87,7 @@ const ProjectsDetails = () => {
                                         sx={{ display: 'inline' }}
                                         component="span"
                                         variant="body2"
-                                        color="text.primary"
+                                        color="#878a8f"
                                     >
                                         {currentProject?.feature3}
                                     </Typography>
@@ -115,9 +115,9 @@ const ProjectsDetails = () => {
                 Please check the relevant link 
             </Typography>
             <Box className='code-link' sx={{display:'flex', justifyContent:'space-between', flexDirection:{xs:'column', sm:'row', lineHeight:'2em'}}}>
-                <a href={currentProject?.live} target='_blank' rel="noreferrer" alt='lievLink'>Live Site</a>
-                <a href={currentProject?.client} target='_blank' rel="noreferrer" alt='lievLink'>Client Site Code</a>
-                <a href={currentProject?.server} target='_blank' rel="noreferrer" alt='lievLink'>Server Site Code</a>
+                <a href={currentProject?.live} target='_blank' rel="noreferrer" alt='lievLink' style={{color:'#878a8f'}}>Live Site</a>
+                <a href={currentProject?.client} target='_blank' rel="noreferrer" alt='lievLink' style={{color:'#878a8f'}}>Client Site Code</a>
+                <a href={currentProject?.server} target='_blank' rel="noreferrer" alt='lievLink' style={{color:'#878a8f'}}>Server Site Code</a>
             </Box>
             </Box>
         </Container>

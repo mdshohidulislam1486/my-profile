@@ -8,7 +8,7 @@ import { Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
  
 const MyProject = ({project}) => {
-    const {name, img1, _id} = project
+    const {name, img1, _id, feature1} = project
  
    
     return (
@@ -23,14 +23,12 @@ const MyProject = ({project}) => {
                         <Typography gutterBottom variant="h5" component="div">
                         {name}
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                        species, ranging across all continents except Antarctica
+                        <Typography variant="body2" color="#878a8f">
+                        {feature1}
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small">Share</Button>
-                        <Button size="small"><Link to={`/projectdetails/${_id}`}>Learn More</Link></Button>
+                        <Button size="small"><Link style={{textDecoration:'none', color:"#878a8f"}} to={`/projectdetails/${_id}`}>Learn More</Link></Button>
                     </CardActions>
                 </Card>
     );

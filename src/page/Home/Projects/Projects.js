@@ -46,11 +46,11 @@ const Projects = () => {
                             <Box sx={{display:'flex', justifyContent:'space-between'}}>
                             <Box>
                             <Typography className='project-text-scale'>
-                                2018 - 2019
+                                Sep 2021 - Oct 2021
                             </Typography>
                             <Grid className='project-text-scale'>
                                 <Grid item xs={12} md={6}>
-                                 <Typography >Basic UX - design resources for InVision Studio</Typography>
+                                 <Typography >Niche website collection of CCTV Camera</Typography>
                                 </Grid>
                             </Grid>
                             </Box>
@@ -80,11 +80,11 @@ const Projects = () => {
                             <Box sx={{display:'flex', justifyContent:'space-between'}}>
                             <Box>
                             <Typography className='project-text-scale'>
-                                2018 - 2019
+                                Oct 2021 -  Nov 2021
                             </Typography>
                             <Grid className='project-text-scale'>
                                 <Grid item xs={12} md={6}>
-                                 <Typography >Basic UX - design resources for InVision Studio</Typography>
+                                 <Typography >Inbound Bangladesh tour site for foreigners </Typography>
                                 </Grid>
                             </Grid>
                             </Box>
@@ -110,11 +110,11 @@ const Projects = () => {
                             <Box sx={{display:'flex', justifyContent:'space-between'}}>
                             <Box>
                             <Typography className='project-text-scale'>
-                                2018 - 2019
+                               Sep 2018 - Oct 2019
                             </Typography>
                             <Grid className='project-text-scale'>
                                 <Grid item xs={12} md={6}>
-                                 <Typography >Basic UX - design resources for InVision Studio</Typography>
+                                 <Typography >Healthcare website based  with React Js</Typography>
                                 </Grid>
                             </Grid>
                             </Box>
@@ -145,11 +145,11 @@ const Projects = () => {
                             <Box sx={{display:'flex',justifyContent:'space-between'}}>
                             <Box>
                             <Typography className='project-text-scale'>
-                                2018 - 2019
+                                July 2021 -  Aug 2021
                             </Typography>
                             <Grid className='project-text-scale'>
                                 <Grid item xs={12} md={6}>
-                                 <Typography >Basic UX - design resources for InVision Studio</Typography>
+                                 <Typography >Online library with vanilla js</Typography>
                                 </Grid>
                             </Grid>
                             </Box>

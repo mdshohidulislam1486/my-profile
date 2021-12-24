@@ -49,13 +49,14 @@ const Footer = () => {
 
                 <Grid item xm={8} sm={4} md={2}>
                     <Typography variant='body1' sx={{color:'#0f141e', fontWeight:'700'}}>
-                    Latest projects —
+                     Browse Pages —
                     </Typography>
                     <Box className='link-follow' variant="body2" sx={{display:'flex', flexDirection:'column'}}>
-                        <a   href="https://www.google.com/" rel="noreferrer" target='_blank' alt='myNewPro'>Iceland</a>
-                        <a href="https://www.google.com/" rel="noreferrer" target='_blank' alt='myNewPro'>Iceland</a>
-                        <a href="https://www.google.com/" rel="noreferrer" target='_blank' alt='myNewPro'>Iceland</a>
-                        <a href="https://www.google.com/" rel="noreferrer" target='_blank' alt='myNewPro'>Iceland</a>
+                        <Link   to="/home" rel="noreferrer" alt='myNewPro'>Home</Link>
+                        <Link   to="/myprojects" rel="noreferrer" alt='myNewPro'>My Project</Link>
+                        <Link   to="/contact" rel="noreferrer" alt='myNewPro'>Contact Me</Link>
+                        <Link   to="/about" rel="noreferrer" alt='myNewPro'>About me</Link>
+                     
                     </Box>
                 
                 </Grid>
