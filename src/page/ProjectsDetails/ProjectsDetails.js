@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import { Container, Box, Grid, Typography, ListItemText } from '@mui/material';
+import { useParams, useNavigate, Link } from 'react-router-dom';
+import { Container, Box, Grid, Typography, ListItemText, Button } from '@mui/material';
 import Navigation from '../shared/Navigation/Navigation';
 
 
@@ -28,9 +28,9 @@ const ProjectsDetails = () => {
     return (
         <><Navigation/>
         <Container>
-            
+            <Button sx={{textDecoration:'none', margin:'3em 2em'}}><Link style={{textDecoration:'none', fontWeight:600}} to='/myprojects'>Back to Porjects page</Link></Button>
             <Box>
-                <Grid container spacing={2} sx={{mt:7, display:'flex', alignItems:'center'}}>
+                <Grid container spacing={2} sx={{display:'flex', alignItems:'center'}}>
                     <Grid item xs={12} md={6} sx={{justifyContent:'center', display:'flex'}}>
                         <Box sx={{width:'90%', height:'90%', position:'relative'}}>
                         <img style={{position:'relative', width:'100%'}} src={currentProject?.img1} alt="" />
