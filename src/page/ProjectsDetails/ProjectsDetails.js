@@ -111,10 +111,15 @@ const ProjectsDetails = () => {
                 </Grid>
 
             </Box>
+            <Box sx={{textAlign:'center'}}>
+            <Typography variant='h6' sx={{fontWeight:'800', my:5}}>
+                Please check the relevant link 
+            </Typography>
             <Box className='code-link' sx={{display:'flex', justifyContent:'space-between', flexDirection:{xs:'column', sm:'row', lineHeight:'2em'}}}>
                 <a href={currentProject?.live} target='_blank' rel="noreferrer" alt='lievLink'>Live Site</a>
                 <a href={currentProject?.client} target='_blank' rel="noreferrer" alt='lievLink'>Client Site Code</a>
                 <a href={currentProject?.server} target='_blank' rel="noreferrer" alt='lievLink'>Server Site Code</a>
+            </Box>
             </Box>
         </Container>
         </>
