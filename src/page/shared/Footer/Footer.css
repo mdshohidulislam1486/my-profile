@@ -24,6 +24,7 @@
 
 .hover-underline{
     display: inline-block;
+    color: black;
     transition: all .3s ease-in;
     border-bottom: 5px solid rgba(0,0,0, 0.001);
 

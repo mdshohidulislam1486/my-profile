@@ -33,13 +33,15 @@ const Navigation = () => {
     return (
         
          <Box style={{textAlign:'center'}} sx={{display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+             <Link style={{textDecoration:'none'}} to='/contact'> 
              <Box sx={{display:'flex', alignItems:'center', marginLeft:{xs:'1em', sm:'3em'} }}>
                 <div><h3 className='round-nav'>S</h3></div>
                 <div style={{lineHeight:'2px', marginLeft:'10px'}}>
-                    <h3>Md Shohidul Islam</h3>
-                    <p style={{fontSize:'.8em'}}> Junior Full Stack Web Developer</p>
+                    <h3 style={{color:"#000"}}>Md Shohidul Islam</h3>
+                    <p style={{fontSize:'.8em', color:'#878a8f'}}> Junior Full Stack Web Developer</p>
                 </div>
              </Box>
+             </Link>
 
               <Box  sx={{display:'flex', justifyContent:"center", alignItems:'center'}}>
                 

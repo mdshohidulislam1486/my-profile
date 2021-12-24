@@ -1,6 +1,7 @@
 import { Typography,  Grid, Container} from '@mui/material';
 import { Box, width } from '@mui/system';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css'
 
 
@@ -14,9 +15,10 @@ const Footer = () => {
                   LOOKING FOR A DEVELOPER?
               </Typography>
               <br/>
-              <Typography className='hover-underline'  sx={{fontWeight:'800', fontSize:'3.5vw'}}>
+              <Link to='/contact'><Typography className='hover-underline'  sx={{fontWeight:'800', fontSize:'3.5vw'}}>
               Let's work together →
               </Typography>
+              </Link>
 
           </Box>
 
