@@ -12,7 +12,7 @@ const ProjectsDetails = () => {
     const [currentProject, setCurrentProject] = useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:5000/projects')
+        fetch('https://immense-reaches-51418.herokuapp.com/projects')
         .then(res => res.json())
         .then(data => setMyprojects(data))
     },[])

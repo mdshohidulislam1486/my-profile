@@ -8,7 +8,7 @@ const AddProjects = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
       console.log(data)
-      axios.post('http://localhost:5000/projects', data)
+      axios.post('https://immense-reaches-51418.herokuapp.com/projects', data)
       .then(res =>{
         if(res.data.insertedId){
             alert('New data added successfully')
