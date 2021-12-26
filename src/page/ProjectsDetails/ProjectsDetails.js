@@ -31,7 +31,7 @@ const ProjectsDetails = () => {
         <>
         <Navigation/>
         { currentProject
-        ? <Container>
+        ? <Container sx={{minHeight:'100vh'}}>
         <Box sx={{margin:'3em 2em', display:'flex', justifyContent:{xs:'center', sm:'space-between'}, alignItems:'center', flexDirection:{xs:'column', sm:'row'}}}>
         <Button sx={{textDecoration:'none'}}><Link style={{textDecoration:'none', fontWeight:600}} to='/myprojects'>Back to Porjects page</Link>
         </Button>

@@ -1,6 +1,8 @@
 import { Button, Container, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import cctv from '../../../images/projects/cctvDes.png'
 import cctvph1 from '../../../images/projects/cctvmobile2.png'
@@ -27,6 +29,10 @@ const Projects = () => {
     const projectId2 = '61bce522a154265eacadcc2c'
     const projectId3 = '61bce522a154265eacadcc2c'
     const projectId4 = '61bce522a154265eacadcc2c'
+
+    useEffect(()=>{
+        AOS.init()
+    }, [])
     
 
     return (
@@ -41,7 +47,7 @@ const Projects = () => {
                     </Typography>
                 </Box>
                 <Grid sx={{justifyContent:'space-around', alignItems:'center'}} container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} >
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={6} data-aos='fade-up'>
                         <Box className="project-height" sx={{color:'#fff', p:3, backgroundColor:"rgba(50, 50, 120)"}}>
                             <Box sx={{display:'flex', justifyContent:'space-between'}}>
                             <Box>
@@ -75,7 +81,7 @@ const Projects = () => {
                             </Grid>         
                         </Box>
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={6} data-aos='fade-up'>
                         <Box className="project-height" sx={{color:'#fff', p:3}}>
                             <Box sx={{display:'flex', justifyContent:'space-between'}}>
                             <Box>
@@ -105,7 +111,7 @@ const Projects = () => {
                             
                         </Box>
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={6} data-aos='fade-down'>
                         <Box className="project-height" sx={{color:'#fff', p:3, backgroundColor:'rgba(34, 49, 63)'}}>
                             <Box sx={{display:'flex', justifyContent:'space-between'}}>
                             <Box>
@@ -140,7 +146,7 @@ const Projects = () => {
                         </Box>
                     </Grid>
 
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={6} data-aos='fade-down'>
                         <Box className="project-height" sx={{color:'#fff', p:3, backgroundColor:"rgba(8, 14, 44)"}}>
                             <Box sx={{display:'flex',justifyContent:'space-between'}}>
                             <Box>

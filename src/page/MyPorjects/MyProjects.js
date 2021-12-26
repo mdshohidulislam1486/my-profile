@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Typography from '@mui/material/Typography';
 import { Box, Container } from '@mui/material';
 import MyProject from './MyProject';
 import Navigation from '../shared/Navigation/Navigation';
@@ -22,13 +21,12 @@ useEffect(() =>{
         <Navigation></Navigation>
         <Container>
             <Box sx={{mt:8, display:'flex', flexWrap:'wrap', justifyContent:'center'}}>
-                { projects
-                    ? projects.map(project =><MyProject
+                { projects ? projects.map(project =><MyProject
                     key={project._id}
                     project={project}
                     ></MyProject>)
                     :
-                    <Box sx={{ display: 'flex' }}>
+                    <Box sx={{ display: 'flex', flexWrap:'wrap'}}>
                     <CircularProgress />
                   </Box>
                 }
