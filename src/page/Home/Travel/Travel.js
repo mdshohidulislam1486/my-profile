@@ -3,9 +3,16 @@ import {Box, Container, Typography, Grid} from '@mui/material';
 import travel1 from '../../../images/Travel/travel1.png'
 import travel2 from '../../../images/Travel/travel2.png'
 import travel3 from '../../../images/Travel/travel5.png'
+import  { useEffect } from 'react';
 import './Travel.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 
 const Travel = () => {
+    useEffect(()=>{
+        AOS.init()
+    }, [])
     return (
       <Container>
           <Box sx={{my:8}}>
@@ -18,7 +25,9 @@ const Travel = () => {
           </Box>
           <Box sx={{ width: '100%' }}>
             <Grid className='wrapper' container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                    <Grid className='travel-img img-box' xs={12}  item sm={6} md={4}>
+                    <Grid className='travel-img img-box' xs={12}  item sm={6} md={4}
+                    data-aos="fade-left"
+                    >
                         <Box className='info'>
                         <img style={{ width:'100%'}} src={travel1} alt="nature" />
                         <h1>Section 1</h1>
@@ -29,7 +38,9 @@ const Travel = () => {
 
                         </Box>
                     </Grid>
-                    <Grid className='travel-img img-box' xs={12}  item sm={6} md={4}>
+                    <Grid className='travel-img img-box' xs={12}  item sm={6} md={4}
+                    data-aos="fade-up"
+                    >
                         <Box className='info'>
                         <img style={{ width:'100%'}} src={travel2} alt="nature" />
                         <h1>Section 1</h1>
@@ -40,7 +51,9 @@ const Travel = () => {
 
                         </Box>
                     </Grid>
-                    <Grid className='travel-img img-box' xs={12}  item sm={6} md={4}>
+                    <Grid className='travel-img img-box' xs={12}  item sm={6} md={4} 
+                    data-aos="fade-right"
+                    >
                         <Box className='info'>
                         <img style={{width:'100%'}} src={travel3} alt="nature" />
                         <h1>Section 1</h1>

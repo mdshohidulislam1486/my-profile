@@ -111,7 +111,7 @@ const Projects = () => {
                             
                         </Box>
                     </Grid>
-                    <Grid item xs={12} md={6} data-aos='fade-down'>
+                    <Grid item xs={12} md={6} data-aos='fade-up'>
                         <Box className="project-height" sx={{color:'#fff', p:3, backgroundColor:'rgba(34, 49, 63)'}}>
                             <Box sx={{display:'flex', justifyContent:'space-between'}}>
                             <Box>
@@ -146,7 +146,7 @@ const Projects = () => {
                         </Box>
                     </Grid>
 
-                    <Grid item xs={12} md={6} data-aos='fade-down'>
+                    <Grid item xs={12} md={6} data-aos='fade-up'>
                         <Box className="project-height" sx={{color:'#fff', p:3, backgroundColor:"rgba(8, 14, 44)"}}>
                             <Box sx={{display:'flex',justifyContent:'space-between'}}>
                             <Box>
