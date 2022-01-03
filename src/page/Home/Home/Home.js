@@ -9,11 +9,11 @@ import Travel from '../Travel/Travel';
 const Home = () => {
    
     return (
-        <div id='overflow-hidden'>
+        <div >
             <Navigation></Navigation>
             <Banner></Banner>
             <Projects></Projects>
-            <BasicProjects></BasicProjects>
+            {/* <BasicProjects></BasicProjects> */}
             <Travel></Travel>
         </div>
     );

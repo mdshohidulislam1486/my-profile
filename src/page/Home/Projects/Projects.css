@@ -2,7 +2,7 @@
     height: 20rem;
 }
 
-.project-height img{
+.img-setup img{
    width: 100%;
    overflow: hidden;
    transition: all .5s ease-in-out;

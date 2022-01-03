@@ -66,7 +66,7 @@ const Projects = () => {
                                 </Link>
                             </Box>
                             </Box>
-                            <Grid sx={{display:'flex'}}>
+                            <Grid className='img-setup' sx={{display:'flex'}}>
                                 <Grid item xs={12} >
                                 <img style={{marginTop:'10px'}} src={cctv} alt="projPicture" />
                                 </Grid>
@@ -100,7 +100,7 @@ const Projects = () => {
                                 </Link>
                             </Box>
                             </Box>
-                            <Grid sx={{display:'flex'}}>
+                            <Grid className='img-setup'  sx={{display:'flex'}}>
                                 <Grid item xs={12} >
                                 <img  style={{ marginTop:'15px', position:'relative'}} src={backWard1} alt="projPicture" />
                                 </Grid>
@@ -130,7 +130,7 @@ const Projects = () => {
                                 </Link>
                             </Box>
                             </Box>
-                            <Grid sx={{display:'flex'}}>
+                            <Grid className='img-setup'  sx={{display:'flex'}}>
                                 <Grid item xs={12} >
                                 <img style={{marginTop:'10px'}} src={disha1} alt="projPicture" />
                                 </Grid>
@@ -165,7 +165,7 @@ const Projects = () => {
                                 </Link>
                             </Box>
                             </Box>
-                            <Grid sx={{display:'flex'}}>
+                            <Grid className='img-setup'  sx={{display:'flex'}}>
                                 <Grid item xs={12} >
                                 <img style={{marginTop:'10px'}} src={book1} alt="projPicture" />
                                 </Grid>

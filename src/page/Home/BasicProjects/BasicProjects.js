@@ -46,7 +46,7 @@ const BasicProjects = () => {
             </Typography>
 
             <Box sx={{ width: '100%', mt:6 }}>
-            <Grid className='wrapper' container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+            <Grid className='wrapper' container rowSpacing={1} columnSpacing={{ xs: 2, sm: 2, md: 1 }}>
                      {
                        basisProjects.map(basicProject => <BasicProject
                        key={basicProject.name}
