@@ -23,9 +23,9 @@ const Travel = () => {
               Latest Tour Pictures
           </Typography>       
           </Box>
-          <Box sx={{ width: '100%' }}>
-            <Grid className='wrapper' container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} sx={{display:'flex', justifyContent:'center', alignItems:"center"}}>
-                    <Grid  className='travel-img img-box' item xs={6}   sm={6} md={4}
+          
+            <Grid className='wrapper' container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} sx={{display:'flex', justifyContent:'center', alignItems:"center", overflow:'hidden'}}>
+                    <Grid  className='travel-img img-box' item xs={12}   sm={6} md={4}
                     data-aos="fade-left"
                     >
                         <a href="https://www.instagram.com/naeemkhan8954/" rel='noreferrer' alt='my travel' target='_blank'>
@@ -40,7 +40,7 @@ const Travel = () => {
                         </Box>
                         </a>
                     </Grid>
-                    <Grid className='travel-img img-box' xs={6}  item sm={6} md={4}
+                    <Grid className='travel-img img-box' xs={12}  item sm={6} md={4}
                     data-aos="fade-up"
                     >   <a href="https://www.instagram.com/naeemkhan8954/" rel='noreferrer' alt='my travel' target='_blank'>
                         <Box className='info'>
@@ -54,7 +54,7 @@ const Travel = () => {
                         </Box>
                         </a>
                     </Grid>
-                    <Grid className='travel-img img-box' xs={6}  item sm={6} md={4} 
+                    <Grid  className='travel-img img-box' xs={12}  item sm={6} md={4} 
                     data-aos="fade-right"
                     >
                         <a href="https://www.instagram.com/naeemkhan8954/" rel='noreferrer' alt='my travel' target='_blank'>
@@ -72,7 +72,7 @@ const Travel = () => {
                    
                     
             </Grid>
-            </Box>
+           
 
       </Container>
     );
