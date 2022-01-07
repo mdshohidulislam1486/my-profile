@@ -5,6 +5,7 @@ import "./Banner.css"
 import proPic from '../../../images/myPicture.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Typical from 'react-typical'
 
 
 
@@ -24,7 +25,12 @@ const Banner = () => {
                         </Typography>
 
                         <Typography sx={{color:'#0f141e', fontWeight:"800", letterSpacing:'-.01em'}} variant="h3" gutterBottom component="div">
-                        Junior Full Stack Developer
+                        <Typical
+                            steps={['Junior', 1000, 'Full Stack Developer', 2000]}
+                            loop={Infinity}
+                            wrapper="p"
+                        />    
+                     
                         </Typography>
                         <Typography sx={{color:'#878a8f'}}  gutterBottom component="div">
                         Over the past 1 years, as an art director and designer, I would like worke with big companies and up-and-coming startups to successfully help them reach their full potential and attract new customers.
