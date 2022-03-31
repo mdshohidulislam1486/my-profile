@@ -30,7 +30,6 @@ const Banner = () => {
                             loop={Infinity}
                             wrapper="p"
                         />    
-                     
                         </Typography>
                         <Typography sx={{color:'#878a8f'}}  gutterBottom component="div">
                         Over the past 1 years, as an art director and designer, I would like worke with big companies and up-and-coming startups to successfully help them reach their full potential and attract new customers.
@@ -38,7 +37,9 @@ const Banner = () => {
                     </Grid>
                     <Grid order={{ xs: 1, sm: 2 }} style={{textAlign:'center'}} item xs={12} md={6} data-aos="fade-up"
                          >
-                        <img   src={proPic}  alt='myPciture'/>
+                        <Box className="banner-img">
+                            <img className='myProPic' src={proPic} alt="my profile" />
+                        </Box>
                     </Grid>
             
                 </Grid>
