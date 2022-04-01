@@ -31,11 +31,11 @@ const Travel = () => {
                         <a href="https://www.instagram.com/naeemkhan8954/" rel='noreferrer' alt='my travel' target='_blank'>
                         <Box className='info'>
                         <img style={{ width:'100%'}} src={travel1} alt="nature" />
-                        <h1>Section 1</h1>
+                        <h1>Srimangal</h1>
                         </Box>
                         <Box className='desc'>
-                            <h1>Detials 1</h1>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, necessitatibus beatae inventore libero tenetur in quo, debitis, modi eveniet labore eaque qui nam! Architecto, nihil doloribus! </p>
+                            <h1>Tea State</h1>
+                            <p> Sreemangal (Bengali: শ্রীমঙ্গল, romanized: Srimongol) is an upazila of Moulvibazar District[1] in the Sylhet Division of Bangladesh. It is located at the southwest of the district, and borders the Habiganj District to the west and the Indian state of Tripura to the south. Sreemangal is often referred to as the 'tea capital' of Bangladesh, and is most famous for its tea fields. Other than tea, the rubber, pineapple, wood, betel, and lemon industries also exist in the upazila. </p>
 
                         </Box>
                         </a>
@@ -45,11 +45,11 @@ const Travel = () => {
                     >   <a href="https://www.instagram.com/naeemkhan8954/" rel='noreferrer' alt='my travel' target='_blank'>
                         <Box className='info'>
                         <img style={{ width:'100%'}} src={travel2} alt="nature" />
-                        <h1>Section 1</h1>
+                        <h1>Pottery</h1>
                         </Box>
                         <Box className='desc'>
-                            <h1>Detials 1</h1>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, necessitatibus beatae inventore libero tenetur in quo, debitis, modi eveniet labore eaque qui nam! Architecto, nihil doloribus! </p>
+                            <h1>Brass and Pottery</h1>
+                            <p> Pottery had its roots deep in the subcontinent and Bangladesh was not an exception. Although Bangladesh is predominantly a Muslim country, pottery is predominantly a Hindu craft. Symmetrical, smooth, bright and unless it falls, it would last a long time-these attributes made things of pottery very popular. </p>
 
                         </Box>
                         </a>
@@ -60,11 +60,11 @@ const Travel = () => {
                         <a href="https://www.instagram.com/naeemkhan8954/" rel='noreferrer' alt='my travel' target='_blank'>
                         <Box className='info'>
                         <img style={{width:'100%'}} src={travel3} alt="nature" />
-                        <h1>Section 1</h1>
+                        <h1>Jaflong </h1>
                         </Box>
                         <Box className='desc'>
-                            <h1>Detials 1</h1>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, necessitatibus beatae inventore libero tenetur in quo, debitis, modi eveniet labore eaque qui nam! Architecto, nihil doloribus! </p>
+                            <h1>Stone collection</h1>
+                            <p> Jaflong (Bengali: জাফলং) is a hill station and tourist destination in the Division of Sylhet, Bangladesh. It is located in Gowainghat Upazila of Sylhet District and situated at the border between Bangladesh and the Indian state of Meghalaya, overshadowed by subtropical mountains and rainforests. It is known for its stone collections and is home of the Khasi tribe. </p>
 
                         </Box>
                         </a>

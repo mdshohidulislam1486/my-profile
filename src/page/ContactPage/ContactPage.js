@@ -1,7 +1,7 @@
 
-import { Button, Container, Grid, TextField, Typography } from '@mui/material';
+import { Alert, Button, Container, Grid, Stack, TextField, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import React from 'react';
+import React, { useState } from 'react';
 import Navigation from '../../page/shared/Navigation/Navigation'
 import './Contact.css'
 import emailjs from 'emailjs-com';
@@ -11,7 +11,9 @@ import { useRef } from 'react';
 
 
 
+
 const ContactPage = () => {
+    const [message, setMessage] = useState(false)
 
     const form = useRef();
 
@@ -26,6 +28,8 @@ const ContactPage = () => {
           console.log(error.text);
       });
       e.target.reset()
+      setMessage(true)
+
         
     }
     
@@ -56,24 +60,30 @@ const ContactPage = () => {
                             </Grid>
                             <Grid item xs={12} md={8}>
                                 <Typography sx={{my:3, color:'#878a8f'}}>
-                                Got a project? Drop me a line if you want to work together on something exciting. Big or small. Mobile or web.
+                                Got a project? Drop me a line if you want to work together on something exciting. Big or small.
                                 </Typography>
                                 <form ref={form} onSubmit={sendEmail}>
-                                    <TextField sx={{mr:2}} id="standard-basic" type="text" name="user_name"  label="Name" variant="standard" />
+                                    <TextField sx={{mr:2, maxWidht:'5em'}} id="standard-basic" type="text" name="user_name"  label="Name" variant="standard"  />
+                              
                                     <TextField  id="standard-basic" type="email" name="user_email"  label="Email" variant="standard" />
                                     <br/>
-                                    <TextField
-                                    id="standard-multiline-static"
-                                    label="Your Message"
-                                    multiline
-                                    rows={6}
-                                    sx={{length:'100%'}}
-                                    variant="standard"
-                                    name="message"
-                                    />
+                                    <br/>
+                                    
+                                    <Box
+                                            sx={{
+                                                width: 500,
+                                                maxWidth: '100%',
+                                            }}
+                                            >
+                                            <TextField name="message" rows={6} multiline fullWidth label="Your Message" id="fullWidth" />
+                                    </Box>
                                     <br/>
                                     <br/>
-                                    <Button type="submit" sx={{py:'.1em'}} variant='contained' color='secondary'>Send your message</Button>
+                                        <Button type="submit" sx={{py:'.1em'}} variant='contained' color='secondary'>Send your message</Button>
+                                        <br/>
+                                        {message ?  <Stack sx={{ width: '100%' }} spacing={2}>
+                                            <Alert severity="success">Your message was successfully fowarded</Alert>
+                                            </Stack>: ''}
                                 </form>      
                             </Grid>
                         </Grid>

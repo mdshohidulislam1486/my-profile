@@ -30,7 +30,7 @@ const Footer = () => {
                         Contact information —
                         </Typography>
                         <Typography variant="body2" sx={{color:'#878a8f'}}>
-                        Feel free to reach out to me any time. I prefer to talk over email, especially since we may be a few time zones away.
+                        Feel free to reach out to me any time. I prefer to talk over WhatsApp, but you can email me if needed. 
                         </Typography>
                         <Typography variant="caption" sx={{fontWeight:'600'}} >
                         <span style={{color:'#878a8f'}}>E:</span> snaeem.wd@gmail.com
@@ -68,7 +68,7 @@ const Footer = () => {
                         Current availability —
                         </Typography>
                         <Typography variant="body2" sx={{color:'#878a8f'}}>
-                        I usually work on several projects but I'll be happy to discuss new opportunities. Let's get in touch
+                        I am currently working on some of my private projects and am available to hire as a junior MERN developer.
                         </Typography>
                     </Box>
               

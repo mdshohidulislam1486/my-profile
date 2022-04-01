@@ -31,7 +31,7 @@ const ProjectsDetails = () => {
         <>
         <Navigation/>
         { currentProject
-        ? <Container sx={{minHeight:'100vh'}}>
+        ? <Container sx={{minHeight:'100vh'}} >
         <Box sx={{margin:'3em 2em', display:'flex', justifyContent:{xs:'center', sm:'space-between'}, alignItems:'center', flexDirection:{xs:'column', sm:'row'}}}>
         <Button sx={{textDecoration:'none'}}><Link style={{textDecoration:'none', fontWeight:600}} to='/myprojects'>Back to Porjects page</Link>
         </Button>
@@ -40,8 +40,8 @@ const ProjectsDetails = () => {
         </Typography>
         </Box>
 
-        <Box sx={{mb:5}}>
-            <Grid container spacing={2} sx={{display:'flex',  alignItems:'center'}}>
+        <Box sx={{mb:5}}  >
+            <Grid container spacing={2} sx={{display:'flex',  alignItems:'center'}} >
                 <Grid item xs={12} md={6} sx={{justifyContent:'center', display:'flex'}} order={{xs:2, sm:2, md: 1 }}>
                     <Box sx={{width:'90%', height:'90%', position:'relative'}}>
                     <img style={{position:'relative', width:'100%'}} src={currentProject?.img1} alt="" />
@@ -119,16 +119,16 @@ const ProjectsDetails = () => {
             Please check the relevant link 
         </Typography>
         <Box className='code-link' sx={{display:'flex', justifyContent:'space-between', flexDirection:{xs:'column', sm:'row', lineHeight:'2em'}}}>
-            <a href={currentProject?.live} target='_blank' rel="noreferrer" alt='lievLink' style={{color:'#878a8f'}}>Live Site</a>
-            <a href={currentProject?.client} target='_blank' rel="noreferrer" alt='lievLink' style={{color:'#878a8f'}}>Client Site Code</a>
-            <a href={currentProject?.server} target='_blank' rel="noreferrer" alt='lievLink' style={{color:'#878a8f'}}>Server Site Code</a>
+            <a href={currentProject?.live} target='_blank' rel="noreferrer" alt='lievLink' style={{color:'#000', fontWeight:700}}>Live Site</a>
+            <a href={currentProject?.client} target='_blank' rel="noreferrer" alt='lievLink' style={{color:'#000', fontWeight:700}}>Client Site Code</a>
+            <a href={currentProject?.server} target='_blank' rel="noreferrer" alt='lievLink' style={{color:'#000', fontWeight:700}}>Server Site Code</a>
         </Box>
         </Box>
     </Container>
         
         : 
       <Box sx={{justifyContent:'center', alignItems:'center', display:'flex'}}>
-         <Stack sx={{ width: '70%', color: 'grey.500' }} spacing={2}>
+         <Stack sx={{ width: '20%', color: 'grey.500' }} spacing={2}>
             <LinearProgress color="inherit" />
             <LinearProgress color="success" />
             <LinearProgress color="primary" />

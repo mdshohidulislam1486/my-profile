@@ -25,10 +25,10 @@ import { Link } from 'react-router-dom';
 const Projects = () => {
 
 
-    const projectId1 = '61bce522a154265eacadcc2c'
-    const projectId2 = '61bce522a154265eacadcc2c'
-    const projectId3 = '61bce522a154265eacadcc2c'
-    const projectId4 = '61bce522a154265eacadcc2c'
+    const cctv1 = '6246de6813161cb6d818282c'
+    const backWard = '6246e4bf13161cb6d818282e'
+    const bookARchive = '6246ed8813161cb6d8182830'
+    const disha = '6246eac813161cb6d818282f'
 
     useEffect(()=>{
         AOS.init()
@@ -61,7 +61,7 @@ const Projects = () => {
                             </Grid>
                             </Box>
                             <Box> 
-                                <Link style={{textDecoration:'none'}} to={`/projectdetails/${projectId1}`}>
+                                <Link style={{textDecoration:'none'}} to={`/projectdetails/${cctv1}`}>
                                 <Button className='project-button'>View Details -</Button>
                                 </Link>
                             </Box>
@@ -95,7 +95,7 @@ const Projects = () => {
                             </Grid>
                             </Box>
                             <Box> 
-                                <Link style={{textDecoration:'none'}} to={`/projectdetails/${projectId1}`}>
+                                <Link style={{textDecoration:'none'}} to={`/projectdetails/${backWard}`}>
                                 <Button className='project-button'>View Details -</Button>
                                 </Link>
                             </Box>
@@ -125,7 +125,7 @@ const Projects = () => {
                             </Grid>
                             </Box>
                             <Box> 
-                                <Link style={{textDecoration:'none'}} to={`/projectdetails/${projectId1}`}>
+                                <Link style={{textDecoration:'none'}} to={`/projectdetails/${disha}`}>
                                 <Button className='project-button'>View Details -</Button>
                                 </Link>
                             </Box>
@@ -160,7 +160,7 @@ const Projects = () => {
                             </Grid>
                             </Box>
                             <Box> 
-                                <Link style={{textDecoration:'none'}} to={`/projectdetails/${projectId1}`}>
+                                <Link style={{textDecoration:'none'}} to={`/projectdetails/${bookARchive}`}>
                                 <Button className='project-button'>View Details -</Button>
                                 </Link>
                             </Box>

@@ -12,11 +12,11 @@ const MyProject = ({project}) => {
  
    
     return (
-                <Card sx={{ maxWidth: 345, m:1}}>
+                <Card sx={{ maxWidth: 345, m:1}} data-aos="zoom-in-right">
                     <CardMedia
                         component="img"
                         alt="green iguana"
-                        height="140"
+                        height="150"
                         image={img1}
                     />
                     <CardContent>
