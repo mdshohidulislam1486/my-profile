@@ -24,9 +24,9 @@ const Banner = () => {
                             Md Shohidul Islam
                         </Typography>
 
-                        <Typography sx={{color:'#0f141e', fontWeight:"800", letterSpacing:'-.01em'}} variant="h3" gutterBottom component="div">
+                        <Typography sx={{color:'#0f141e', fontWeight:"800", fontSize:{xs:"1.2em", sm:'3em'}, letterSpacing:'-.01em'}} gutterBottom component="div">
                         <Typical
-                            steps={['Junior', 1000, 'Full Stack Developer', 2000]}
+                            steps={['Junior', 1200, 'MERN Developer', 2400]}
                             loop={Infinity}
                             wrapper="p"
                         />    

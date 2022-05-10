@@ -1,6 +1,7 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import About from './page/About/About';
 import AddProjects from './page/AddProjects/AddProjects';
 import ContactPage from './page/ContactPage/ContactPage';
 import Home from './page/Home/Home/Home';
@@ -9,6 +10,7 @@ import ProjectsDetails from './page/ProjectsDetails/ProjectsDetails';
 import Footer from './page/shared/Footer/Footer';
 
 function App() {
+  
   return (
     <div >
       <BrowserRouter>
@@ -18,6 +20,7 @@ function App() {
           <Route path="/contact" element={<ContactPage/>}/>
           <Route path="/addproject" element={<AddProjects/>}/>
           <Route path="/myprojects" element={<MyProjects/>}/>
+          <Route path="/about" element={<About/>}/>
           <Route path="/projectdetails/:projectid" element={<ProjectsDetails/>}/>
         </Routes>
         <Footer></Footer>
